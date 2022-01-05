@@ -1,0 +1,80 @@
+.rice {
+    margin: 10px auto;
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    &__form {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    &__input {
+        padding: 15px;
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    &__btn {
+        margin-left: 20px;
+        padding: 15px 40px;
+        border-radius: 10px;
+        background-color: #ED213A;
+        border: 2px solid #ED213A;
+        color: #fff;
+    }
+
+    &__btn:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item {
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    &__item:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    &__item + &__item {
+        margin-left: 20px;
+    }
+
+    &__img {
+        margin-top: 5px;
+    }
+}
+
+@media only screen and(max-width: 700px) {
+    .rice {
+        &__btn {
+            margin-top: 20px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item + &__item {
+            margin-top: 20px;
+        }
+    }
+}
