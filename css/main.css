@@ -401,12 +401,17 @@ body {
 
 .rice {
   margin: 10px auto;
+  padding: 0;
 }
 
 .rice__heading {
   margin: 0;
   margin-bottom: 40px;
+  padding: 0;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .rice__form {
@@ -416,7 +421,8 @@ body {
 
 .rice__input {
   padding: 15px;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   border-radius: 10px;
 }
 
@@ -486,6 +492,7 @@ body {
             flex-direction: column;
   }
   .rice__item + .rice__item {
+    margin-left: 0;
     margin-top: 20px;
   }
 }
